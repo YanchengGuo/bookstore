@@ -1,0 +1,287 @@
+body {
+    max-width: 1160px;
+    font: 1em normal Arial, sans-serif;
+    color: #111111;
+}
+/* rules for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 140px;
+    width: 100%;
+    background: transparent url("../images/headerimage.jpg") no-repeat;
+}
+
+
+/* rules for the center header */
+#searchBoxForm {
+    margin-top: 30px;
+    display: flex;
+}
+#searchBox {
+    height: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+
+.dropdownSelect {
+    width: 189px;
+    padding: 5px;
+    background-color: ghostwhite;
+    color: black;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+
+}
+
+.dropdownSelect:hover{
+    background-color: pink;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 5px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownContent a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+/* rules for the right header */
+
+#rightHeader {
+    display: flex;
+    margin-top: 40px;
+}
+
+#cartCount{
+    width: 150px;
+    margin: 8px 0 0 10px;
+    color: white;
+}
+
+#loginButton {
+    background-color: whitesmoke;
+    width: 50px;
+    height: 30px;
+    margin: 4px 10px 0 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+}
+
+#loginButton a{
+    color: black;
+    text-decoration: none;
+}
+#loginButton a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+/* rules for main */
+main{
+    display: flex;
+    justify-content: space-between;
+    border-color: black;
+    border-width: 2px;
+}
+
+.mainLeft{
+    display:flex;
+}
+.leftCategory{
+    border: 2px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+}
+
+/* rules for 4 categories buttons shown on the left section */
+.button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: darksalmon;
+}
+.button:hover{
+    background: yellow;
+}
+
+/* rules for the second category button shown on the left section */
+.bt2{
+    background-color: white;
+}
+
+/* rules for readNow & Add_to_cart button */
+.cart_btn{
+    appearance: none;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 5px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 6px 15px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.cart_btn:focus {
+    text-decoration: none;
+}
+.cart_btn:hover{
+    background-color: pink;
+}
+.cart_btn:active{
+    box-shadow: rgba(0,0,0, 0.125) 0 3px 5px inset;
+    outline: 0;
+}
+
+/* rules for 4 categories button shown on the left section */
+.bt1{
+    margin-top: 150px;
+}
+.bt2{
+    margin-top: 30px;
+}
+.bt3{
+    margin-top: 30px;
+}
+.bt4{
+    margin-top: 30px;
+}
+
+/* flexbox for right section of main */
+.mainRight {
+    display: flex;
+}
+.rightCategory{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    border: 2px dashed black;
+    align-content:space-between;
+    height: 100%;
+    font-size: 12px;
+}
+
+/* rules for book's images and description shown on the right section */
+#book1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+#book2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+#book3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+#book4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+/* rules for the footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+    font-size: 0.8em;
+    width: 100%;
+    background-color: #222;
+    color: #ccc;
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 10px;
+    width: 300px;
+}
+
+#footerLeft a{
+    padding-top: 12px;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 200px;
+}
+
+
+

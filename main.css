@@ -1,0 +1,202 @@
+body {
+    max-width: 1160px;
+    font: 1em normal Arial, sans-serif;
+    color: #111111;
+}
+/* rules for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 140px;
+    width: 100%;
+    background: transparent url("../images/headerimage.jpg") no-repeat;
+}
+
+
+/* rules for the center header */
+#searchBoxForm {
+    margin-top: 30px;
+    display: flex;
+}
+#searchBox {
+    height: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+
+}
+
+.dropdownSelect {
+    width: 189px;
+    padding: 5px;
+    background-color: ghostwhite;
+    color: black;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 5px;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdownContent a:hover {
+    color: #00aacc;
+    text-decoration: none;
+}
+
+/* rules for the right header */
+
+#rightHeader {
+    display: flex;
+    margin-top: 40px;
+}
+
+#cartCount{
+    width: 150px;
+    margin: 8px 0 0 10px;
+    color: white;
+}
+
+#loginButton {
+    background-color: whitesmoke;
+    width: 50px;
+    height: 30px;
+    margin: 4px 10px 0 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+}
+
+#loginButton a{
+    color: black;
+    text-decoration: none;
+}
+#loginButton a:hover {
+    color: #00aacc;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+/* rules for main */
+/* flexbox for left&right section of main */
+.mainLeft{
+    display:flex;
+    flex-wrap: wrap;
+}
+.right{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#des1{
+    color: black;
+    text-align: center;
+}
+#des2{
+    padding: 5px 0;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+}
+#des3{
+    color: black;
+    word-wrap: break-word;
+}
+
+/* draw a border for left half section*/
+.left{
+    border: 2px dashed black;
+    height: 100%;
+    align-content: center;
+}
+.mainRight {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    justify-content: space-around;
+}
+
+/* rules for 4 categories divs on the right section*/
+#category1 {
+    text-align: center;
+}
+#category2 {
+    text-align: center;
+}
+#category3 {
+    text-align: center;
+}
+#category4 {
+    text-align: center;
+}
+
+/* rules for the bold world of right section */
+#shopByCategory{
+    text-align: center;
+    color: black;
+    margin-left: 30%;
+}
+
+/* rules for the footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+    font-size: 0.8em;
+    width: 100%;
+    background-color: #222;
+    color: #ccc;
+
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 10px;
+    width: 300px;
+}
+
+#footerLeft a{
+    padding-top: 12px;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 200px;
+}
+
+
+
